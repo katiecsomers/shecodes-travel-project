@@ -95,6 +95,7 @@ footer {
 .grid img,
 .responsive {
 	width: 100%;
+	height: 100%;
 }
 
 .center {
@@ -144,8 +145,70 @@ footer {
 	color: white;
 }
 
+.gallery-section {
+	padding: 60px 100px;
+}
+
+.photo-array {
+	display: grid;
+	gap: 10px;
+	width: 1000px;
+	margin: 40px auto;
+	transition: all 100ms ease-in-out;
+}
+
+#red-neon {
+	grid-column: 4 / 6;
+	grid-row: 1 / 4;
+}
+
+#flowers {
+	grid-column: 3 / 4;
+	grid-row: 2 / 4;
+}
+
+#plain-street {
+	grid-column: 1 / 3;
+	grid-row: 3 / 5;
+}
+
+#asakusa {
+	grid-column: 3 / 4;
+	grid-row: 1 / 2;
+}
+
+#kimono-women {
+	grid-column: 3 / 6;
+	grid-row: 4 / 5;
+}
+
+#lanterns {
+	grid-column: 1 / 3;
+	grid-row: 1 / 3;
+}
+
+#red-neon,
+#flowers,
+#plain-street,
+#asakusa,
+#kimono-women,
+#lanterns {
+	opacity: 0.5;
+	transition: all 200ms ease-in-out;
+}
+
+#red-neon:hover,
+#flowers:hover,
+#plain-street:hover,
+#asakusa:hover,
+#kimono-women:hover,
+#lanterns:hover {
+	opacity: 1;
+}
+
 .video-section {
-	padding: 100px 80px;
+	padding: 80px;
+	background-color: #f8f8f8;
 }
 
 .video-embeds {
@@ -274,5 +337,22 @@ footer {
 
 	.video-embeds {
 		padding: 10px 0;
+	}
+
+	.gallery-section {
+		padding: 30px;
+	}
+
+	.photo-array {
+		display: inline;
+	}
+
+	#red-neon,
+	#flowers,
+	#plain-street,
+	#asakusa,
+	#kimono-women,
+	#lanterns {
+		opacity: 1;
 	}
 }
